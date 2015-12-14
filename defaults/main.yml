@@ -1,0 +1,4 @@
+---
+# defaults file for dotstrap-fish
+
+user_name: "{{ ansible_user_id }}"

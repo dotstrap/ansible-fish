@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  author: mkwmms
+  description: "Install & configure (dotfiles & change default shell) the fish shell."
+  license: GPLv3
+  min_ansible_version: 2.0
+  platforms:
+    - name: GenericUNIX
+      versions:
+        - any
+    - name: GenericLinux
+      versions:
+        - any
+  galaxy_tags:
+    - dotfiles
+    - dotstrap
+    - system
+    - fish
+    - shell
+
+dependencies: []
+  # - { role: mkwmms.dotstrap, repo: "https://github.com/mkwmms/ansible-dotstrap-fish.git" }

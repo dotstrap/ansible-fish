@@ -1,0 +1,20 @@
+---
+# tasks file for dotstrap-fish
+
+- block:
+  - name: install shell
+    package: name=fish state=present
+
+  - name: determine shell executable location
+    command: which fish
+    register: fish
+
+  - name: change default shell
+    user: name="{{ user_name }}" shell="{{ fish.stdout }}"
+    become: yes
+
+  - name: create shell configuration file
+    template: src=config.j2
+              dest="{{ ansible_user_dir }}/.config/fish/config.fish"
+              owner="{{ user_name }}" force=yes backup=yes
+  tags: bootstrap
