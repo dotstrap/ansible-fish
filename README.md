@@ -2,7 +2,7 @@ dotstrap-fish
 =========
 [![Build Status](https://travis-ci.org/mkwmms/ansible-dotstrap-fish.svg)](https://travis-ci.org/mkwmms/ansible-dotstrap-fish)
 
-Install & configure (dotfiles & change default shell) the [fish] shell.
+Install & configure the [fish] shell.
 
 Requirements
 ------------
