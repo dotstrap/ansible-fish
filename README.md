@@ -1,15 +1,13 @@
-dotstrap-fish
-=========
-[![Build Status](https://travis-ci.org/mkwmms/ansible-dotstrap-fish.svg)](https://travis-ci.org/mkwmms/ansible-dotstrap-fish)
+fish
+====
+[![Build Status](https://travis-ci.org/mkwmms/ansible-fish.svg)](https://travis-ci.org/mkwmms/ansible-fish)
 
 Install & configure the [fish] shell.
 
 Requirements
 ------------
 
-OS X: [homebrew] and the latest XCode tools.
-
-Linux: None.
+A system package manager.
 
 Role Variables
 --------------
@@ -27,8 +25,14 @@ Example Playbook
 ```
     - hosts: servers
       roles:
-         - { role: mkwmms.dotstrap-fish }
+         - { role: mkwmms.fish }
 ```
+
+Notes
+-----
+
+This role will backup your `~/.config/fish/config.fish` and then add a new one 
+using the [template].
 
 License
 -------
@@ -42,10 +46,11 @@ Author Information
 
 
 [@mkwmms]: https://github.com/mkwmms
-[dotstrap]: https://github.com/mkwmms/dotstrap
-[homebrew]: https://github.com/Homebrew/homebrew
-[files]: files/
 [default variables]: defaults/main.yml
+[dotstrap]: https://github.com/mkwmms/dotstrap
+[files]: files/
+[fish]: http://fishshell.com/
+[homebrew]: https://github.com/Homebrew/homebrew
+[template]: templates/config.j2
 [variables]: vars/main.yml
 [zsh]: http://zsh.sourceforge.net
-[fish]: http://fishshell.com/

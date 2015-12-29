@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: mkwmms
-  description: "Install & configure the fish shell."
+  description: Install & configure the fish shell
   license: GPLv3
   min_ansible_version: 2.0
   platforms:
@@ -13,10 +13,7 @@ galaxy_info:
         - any
   galaxy_tags:
     - dotfiles
-    - dotstrap
-    - system
     - fish
     - shell
 
 dependencies: []
-  # - { role: mkwmms.dotstrap, repo: "https://github.com/mkwmms/ansible-dotstrap-fish.git" }
