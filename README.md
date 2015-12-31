@@ -1,5 +1,5 @@
-fish
-====
+ansible-fish
+============
 [![Build Status](https://travis-ci.org/mkwmms/ansible-fish.svg)](https://travis-ci.org/mkwmms/ansible-fish)
 
 Install & configure the [fish] shell.
