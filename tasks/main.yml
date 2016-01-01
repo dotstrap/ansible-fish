@@ -8,7 +8,7 @@
 
 - block:
     - name: setup | determine shell executable location
-      command: command -s fish
+      command: which fish
       register: fish
 
     - name: configure | change default shell
