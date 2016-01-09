@@ -4,6 +4,13 @@ ansible-fish
 
 Install & configure the [fish] shell.
 
+Installation
+------------
+
+```
+ansible-galaxy install mkwmms.fish
+```
+
 Requirements
 ------------
 
@@ -22,17 +29,18 @@ None.
 Example Playbook
 ----------------
 
+Using all the [default variables]:
+
 ```
-    - hosts: servers
+    - hosts: all
       roles:
-         - { role: mkwmms.fish }
+         - role: mkwmms.fish
 ```
 
 Notes
 -----
 
-This role will backup your `~/.config/fish/config.fish` and then add a new one 
-using the [template].
+__Warning__: This role will change your default shell to [fish].
 
 License
 -------
