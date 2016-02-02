@@ -1,6 +1,6 @@
 ansible-fish
 ============
-[![Build Status](https://travis-ci.org/mkwmms/ansible-fish.svg)](https://travis-ci.org/mkwmms/ansible-fish)
+[![Build Status](https://travis-ci.org/mwilliammyers/ansible-fish.svg)](https://travis-ci.org/mwilliammyers/ansible-fish)
 
 Install & configure the [fish] shell.
 
@@ -8,7 +8,7 @@ Installation
 ------------
 
 ```
-ansible-galaxy install mkwmms.fish
+ansible-galaxy install mwilliammyers.fish
 ```
 
 Requirements
@@ -34,7 +34,7 @@ Using all the [default variables]:
 ```
     - hosts: all
       roles:
-         - role: mkwmms.fish
+         - role: mwilliammyers.fish
 ```
 
 Notes
@@ -50,12 +50,12 @@ GPLv3
 Author Information
 ------------------
 
-[@mkwmms]
+[@mwilliammyers]
 
 
-[@mkwmms]: https://github.com/mkwmms
+[@mwilliammyers]: https://github.com/mwilliammyers
 [default variables]: defaults/main.yml
-[dotstrap]: https://github.com/mkwmms/dotstrap
+[dotstrap]: https://github.com/mwilliammyers/dotstrap
 [files]: files/
 [fish]: http://fishshell.com/
 [homebrew]: https://github.com/Homebrew/homebrew
