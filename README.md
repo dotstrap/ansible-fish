@@ -1,6 +1,6 @@
 ansible-fish
 ============
-[![Build Status](https://travis-ci.org/mwilliammyers/ansible-fish.svg)](https://travis-ci.org/mwilliammyers/ansible-fish)
+[![Build Status](https://travis-ci.org/dotstrap/ansible-fish.svg)](https://travis-ci.org/dotstrap/ansible-fish)
 
 Install & configure the [fish] shell.
 
@@ -8,7 +8,7 @@ Installation
 ------------
 
 ```
-ansible-galaxy install mwilliammyers.fish
+ansible-galaxy install dotstrap.fish
 ```
 
 Requirements
@@ -34,7 +34,7 @@ Using all the [default variables]:
 ```
     - hosts: all
       roles:
-         - role: mwilliammyers.fish
+         - role: dotstrap.fish
 ```
 
 Notes
