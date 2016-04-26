@@ -45,7 +45,7 @@ __Warning__: This role will change your default shell to [fish].
 License
 -------
 
-GPLv3
+MIT
 
 Author Information
 ------------------
