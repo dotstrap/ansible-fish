@@ -4,7 +4,9 @@
   package: name="{{ fish_name }}" state="{{ install_state }}"
   tags:
     - bootstrap
+    - bootstrap_fish
     - install
+    - install_fish
 
 - block:
     - name: setup | determine shell executable location
@@ -27,4 +29,6 @@
     #     backup: yes
   tags:
     - bootstrap
+    - bootstrap_fish
     - configure
+    - configure_fish
