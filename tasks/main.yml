@@ -15,7 +15,7 @@
 
     - name: configure | change default shell
       user: name="{{ user_name }}" shell="{{ fish.stdout }}"
-      become_user: "{{ user_name }}"
+      become: yes
 
     # - name: setup | create config directory
     #   file: path="{{ fish_config_file | dirname }}" state=directory follow=yes
