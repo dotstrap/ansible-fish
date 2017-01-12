@@ -8,14 +8,15 @@
     - install
     - install_fish
 
-- block:
-    - name: setup | determine shell executable location
-      command: which fish
-      register: fish
-
-    - name: configure | change default shell
-      user: name="{{ user_name }}" shell="{{ fish.stdout }}"
-      become: yes
+- include: "{{ item }}"
+  with_first_found:
+    - "configure_{{ ansible_pkg_mgr }}.yml"
+    - "configure_default.yml"
+  tags:
+    - bootstrap
+    - bootstrap_fish
+    - configure
+    - configure_fish
 
     # - name: setup | create config directory
     #   file: path="{{ fish_config_file | dirname }}" state=directory follow=yes
@@ -27,8 +28,3 @@
     #     owner: "{{ user_name }}"
     #     force: yes
     #     backup: yes
-  tags:
-    - bootstrap
-    - bootstrap_fish
-    - configure
-    - configure_fish
